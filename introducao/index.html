@@ -10,5 +10,24 @@
 </head>
 <body>
     <canvas id="c"></canvas>
+    <script id="vertex-shader-2d" type="notjs">
+        attribute vec2 position;
+        attribute vec3 color;
+        varying vec3 vColor;
+        
+        void main() {
+            gl_Position = vec4(position,0.0,1.0);
+            vColor = color;
+        }
+      </script>
+      <script id="fragment-shader-2d" type="notjs">
+        precision mediump float;
+
+        varying vec3 vColor;        
+
+        void main() {
+            gl_FragColor = vec4(vColor,1.0);
+        }
+      </script>
 </body>
 </html>
