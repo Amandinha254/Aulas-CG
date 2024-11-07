@@ -1,0 +1,7 @@
+function click(){
+
+}
+
+function seguirMouse(){
+    
+}
