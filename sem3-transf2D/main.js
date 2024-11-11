@@ -1,5 +1,5 @@
-import { circulo,retangulo } from "../codigos base/formas.js";
-import { WebGL } from "../codigos base/initWebGL.js";
+import { circulo,retangulo } from "../codigos-base/formas.js";
+import { WebGL } from "../codigos-base/initWebGL.js";
 
 function main(){
 
